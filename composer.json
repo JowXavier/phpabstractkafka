@@ -1,0 +1,28 @@
+{
+    "name": "jowxavier/phpabstractkafka",
+    "description": "Camada de abstração do projeto phprdkafka e phpeasykafka refatorando para php8",
+    "keywords": ["php", "kafka", "microservices"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Xavier Ribeiro",
+            "email": "jonathanxribeiro@gmail.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "psr/container": "*",
+        "ext-rdkafka": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPAbstractKafka\\": "src/"
+        }
+    }
+}
